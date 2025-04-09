@@ -1,5 +1,11 @@
 package com.forecast.dto.Response;
 
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Hour {
     private String time;
     private double temp_c;
