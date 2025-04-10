@@ -3,7 +3,6 @@ package com.forecast.controller;
 import com.forecast.dto.Request.WeatherRequestDto;
 import com.forecast.dto.ResponseSimple.WeatherForecastDto;
 import com.forecast.service.WeatherService;
-import jakarta.validation.constraints.NotBlank;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

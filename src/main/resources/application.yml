@@ -9,3 +9,9 @@ weather:
 spring:
   application:
     name: weather-service
+
+
+# JWT Configuration
+jwt:
+  secret: UHJ1ZWJhdGVjbmljYWp3dHNwcmluZ2Jvb3QxMjM0NTY3ODkwQUJDREVGRw==
+  expiration: 3600000 # 1 hora en milisegundos
