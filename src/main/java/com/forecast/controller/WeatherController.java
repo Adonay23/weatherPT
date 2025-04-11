@@ -20,9 +20,14 @@ public class WeatherController {
     @PostMapping("/forecast")
     public ResponseEntity<WeatherForecastDto> getTomorrowForecast(
             @RequestBody WeatherRequestDto city) {
+      try{
+          WeatherForecastDto forecast = weatherService.getTomorrowForecast(city);
+          return ResponseEntity.ok(forecast);
+      }catch (Exception e){
+          return ResponseEntity.badRequest().build();
 
-        WeatherForecastDto forecast = weatherService.getTomorrowForecast(city);
-        return ResponseEntity.ok(forecast);
+      }
+
     }
 
 }

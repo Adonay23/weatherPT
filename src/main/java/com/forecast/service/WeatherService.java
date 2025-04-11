@@ -53,7 +53,7 @@ public class WeatherService {
         WeatherForecastDto forecastDto = new WeatherForecastDto();
         try {
             String tomorrowDate = LocalDate.now().plusDays(1).toString();
-
+            logger.info("ERROR API WEATHER: "+city);
             ForecastDay tomorrowForecast = weatherResponse.getForecast().getForecastday().stream()
                     .filter(day -> day.getDate().equals(tomorrowDate))
                     .findFirst()
